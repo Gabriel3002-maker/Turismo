@@ -1,0 +1,304 @@
+*{
+    margin: 10;
+    padding: 10;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(237, 238, 238);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+/*Header*/
+header{
+    background: url(/img/logo.jpg) rgb(255, 253, 253) ;
+    background-repeat: no-repeat;
+     background-size: 150px;
+     background-position: 200px; 
+     max-height: 400px;
+          width: auto;
+     height: 200px;
+    
+}
+/*Titulo*/
+.Titulo{
+   
+    color: rgb(202, 87, 87);
+    padding-top: 30px;
+
+}
+/*Menu*/
+.Menu   ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    padding-right: 30px; 
+}
+/*Items de Menu*/
+ .Menu   ul  li{
+    background-color: #7dd827;
+}
+/*Enlaces Menu*/
+.Menu  ul   a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Items del Menu*/
+.Menu  ul  li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/*Efecto Hover*/
+ .Menu  ul  li:hover{
+    background: #5b78a7;
+}
+
+/*Menu Desplegable*/
+.Menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    padding: 0;
+}
+/*Items del Menu desplegable*/
+.Menu ul ul li{
+    float:none;
+    width: 150px;
+
+}
+/*Enlace de los items del menu desplegable*/
+.Menu ul ul a{
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+/*Items del Menu desplegable*/
+.Menu ul li:hover > ul {
+    display: block;
+}
+/**********************************************************/
+
+/*Section*/
+.contenedor{
+    margin: 10px 30px;
+    justify-content: center;
+    text-align: justify ;
+}
+.contenedor .avatar img{
+    /*Tamaño*/
+    margin: auto;
+    height: 200px ;
+    width: 150px;
+    /*Circulo*/
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    
+}
+/*Efecto en Avatar*/
+.contenedor .avatar img:hover{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px #797876;
+    -webkit-box-shadow: 0px 0px 15px 15px #c6c2bf;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.contenedor .parrafo_somos{
+    color: #5b78a7;
+    font-size: 15px;
+    justify-content: center;
+    text-align:center ;
+    
+}
+/************************************************************/
+
+/*Section2*/
+.contenedor2 div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.contenedor2  .servicios1 .first{
+    padding: 25px;
+}
+.contenedor2 .servicios1 .second{
+   padding: 25px;
+}
+.contenedor2 .servicios1 .third{
+   padding: 25px;
+}
+.contenedor2  .servicios1 .first:hover{
+    box-shadow: 2px 2px 5px #999;
+}
+.contenedor2 .servicios1 .second:hover{
+    box-shadow: 2px 2px 5px #999;
+}
+.contenedor2 .servicios1 .third:hover{
+    box-shadow: 2px 2px 5px #999;
+}
+.contenedor3 div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 5em;
+
+
+}
+.contenedor3 .servicios2 .primero{
+    padding: 25px;
+    margin: 0;
+}
+
+.contenedor3 .servicios2 .primero:hover{
+    box-shadow: 2px 2px 5px #999;
+}
+
+.contenedor3 .servicios2 .segundo{
+    
+    padding: 25px;
+}
+.contenedor3 .servicios2 .segundo:hover{
+    box-shadow: 2px 2px 5px #999;
+}
+
+.contenedor3 .servicios2 .tercero{
+    padding: 25px;
+}
+.contenedor3 .servicios2 .tercero:hover{
+    box-shadow: 2px 2px 5px #999;
+}
+/*Efectos en h1*/
+.Titulo{
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin:  0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    border-right: 0.1em solid #fff;
+    animation: escribir 5s steps(20) infinite;
+}
+@keyframes escribir{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: #fff ;
+    }
+}
+
+/*Efecto de Palabras*/
+h4{
+   margin-top: 10px;
+    margin-left:400px ;
+    margin-bottom: -10px;
+    font-size: 25px;
+}
+
+h2{
+  cursor: default;
+  width: 13px;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  -webkit-animation: bounce .3s ease infinite alternate;
+  font-family: 'Erica One', cursive;
+  font-size: 25px;
+  color: rgb(244, 61, 61);
+  line-height: 100px;
+  text-shadow: 0 1px 0 #CCC,
+               0 2px 0 #CCC,
+               0 3px 0 #CCC,
+               0 4px 0 #CCC,
+               0 5px 0 #CCC,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .6);
+}
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -30px;
+    
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 30px 30px rgba(0, 0, 0, .3);
+  }
+}
+/*********************************************************/
+
+/*Footer*/
+.contenedor4 div{
+    border: 3px solid black;
+     margin: auto;
+    padding: 30px 30px;
+    float: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: black;
+    color: white;
+}
+.contenedor4 .contenedor4_1{
+   float: left;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   font-size: 10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h5{
+    color: white;
+    float: left;
+}
+p{
+    color: rgb(210, 210, 215);
+    font-size: 10px;
+    white-space: pre;
+    justify-content: center;
+    text-align: justify;
+}
+
+.contenedor4 .contenedor4_1 .Parte2{
+    list-style: none;
+}
+
+/*******************************************************/
